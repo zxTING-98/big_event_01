@@ -76,7 +76,7 @@ $(function () {
             url: '/api/login',
             data: $(this).serialize(),
             success: function (res) {
-                console.log(res);
+                // console.log(res);
                 // 状态校验
                 if (res.status != 0) {
                     return layer.msg(res.message, { icon: 5 });
