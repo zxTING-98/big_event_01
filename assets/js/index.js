@@ -64,13 +64,13 @@ function renderAvatar(user) {
     // user_pic != null
     if (user.user_pic) {
         // 有图片头像: 显示图片头像,赋值src,隐藏图片头像
-        $('.layui-nav-img').show().attr('src', user.user_pic);
         $('.text-avatar').hide();
+        $('.layui-nav-img').show().attr('src', user.user_pic);
     } else {
         // 没有图片头像: 显示文字头像,赋值html(),隐藏图片头像
         // 取名称的第一个并大写
+        $('.layui-nav-img').hide();
         let text = name[0].toUpperCase();
         $('.text-avatar').show().html(text);
-        $('.layui-nav-img').hide()
     }
 }
