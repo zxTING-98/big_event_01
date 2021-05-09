@@ -34,7 +34,7 @@ $(function () {
             // 多传了一个值
             data: $(this).serialize(),
             success: function (res) {
-                console.log(res);
+                // console.log(res);
                 if (res.status != 0) {
                     return layui.layer.msg(res.message)
                 }
